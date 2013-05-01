@@ -6,7 +6,7 @@ module Doorkeeper
       validate :response_type, :error => :unsupported_response_type
       validate :client, :error => :invalid_client
       validate :scopes, :error => :invalid_scope
-      validate :redirect_uri, :error => :invalid_redirect_uri
+      #validate :redirect_uri, :error => :invalid_redirect_uri
 
       attr_accessor :server, :client, :response_type, :redirect_uri, :state
       attr_writer   :scope
